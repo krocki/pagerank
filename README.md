@@ -1,3 +1,6 @@
+# A very basic version of pagerank algorithm in C
+### Caution: no optimizations, needs validation
+
 ```
 % tar xzvf web-NotreDame.tar.gz
 % make
