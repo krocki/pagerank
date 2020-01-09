@@ -49,7 +49,7 @@ void vec_resize(vec *v, unsigned cap) {
 
 void vec_append(vec *v, edge *e) {
   if ((v->len+1) >= v->cap)
-    vec_resize(v, 
+    vec_resize(v,
       v->cap == 0 ? 1 :
       2 * v->cap);
     v->e[v->len++] = *e;
@@ -120,7 +120,7 @@ int main(int argc, char **argv) {
   float *pp = malloc(N * sizeof(float));
   float initial = 1.0 / (float)N;
   float d = 0.85;
-  
+
   for (i=0; i<N; i++)
     p[i] = initial;
 
